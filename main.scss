@@ -8,6 +8,8 @@ $dark-grayish-red: hsl(0, 6%, 24%);
 // Gradients
 $main-gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 $second-gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+// break point
+$breakpoint-mobile: 660px;
 
 // global styles
 * {
@@ -28,7 +30,9 @@ body {
   .inner {
     max-width: 430px;
     margin: 0 auto;
+    animation: fromTop 0.9s ease forwards;
   }
+
   .left {
     width: 60%;
     padding: 0 2rem;
@@ -39,10 +43,14 @@ body {
       width: 10rem;
     }
 
+    .bg-mobile {
+      display: none;
+    }
+
     h1 {
       text-transform: uppercase;
       letter-spacing: 11px;
-      font-size: 4rem;
+      font-size: 4.5rem;
       font-weight: 600;
       line-height: 1.1;
       margin: 5rem 0 1.5rem 0;
@@ -67,7 +75,9 @@ body {
 
   form {
     position: relative;
-    margin-top: 2rem;
+    margin: 2rem 0rem;
+    padding-bottom: 1rem;
+
     input {
       height: 3.6rem;
       width: 100%;
@@ -76,12 +86,18 @@ body {
       border-radius: 3rem;
       outline: none;
       padding: 1rem 2rem;
+      transition: 0.2s ease-in all;
 
       &::placeholder {
         font-size: 1.1rem;
         color: $desaturated-red;
         font-family: "Josefin Sans", sans-serif;
         opacity: 0.7;
+      }
+
+      &:focus {
+        border-width: 2px;
+        box-shadow: 0 0 15px rgba($desaturated-red, 0.3);
       }
     }
 
@@ -136,6 +152,124 @@ body {
 
     &.error small {
       display: block;
+    }
+  }
+}
+
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .container {
+    .left {
+      width: 100%;
+
+      .inner {
+        height: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .bg-mobile {
+        display: block;
+        width: calc(100% + 60px);
+        margin: 0 -30px;
+      }
+
+      form {
+        input {
+          font-size: 0.7rem;
+          fontsier &::placeholder {
+            font-size: 0.8rem;
+          }
+
+          &::placeholder {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      h1 {
+        font-size: 2.8rem;
+      }
+
+      form,
+      p {
+        max-width: 75%;
+        margin: 2rem auto;
+      }
+
+      p {
+        max-width: 350px;
+      }
+
+      h1,
+      p {
+        text-align: center;
+      }
+    }
+    .right {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    .left {
+      width: 100%;
+
+      .inner {
+        height: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .bg-mobile {
+        display: block;
+        width: calc(100% + 60px);
+        margin: 0 -30px;
+      }
+
+      form {
+        input {
+          font-size: 0.7rem;
+          fontsier &::placeholder {
+            font-size: 0.8rem;
+          }
+        }
+
+        button {
+          height: 3.6rem;
+          width: 3.5rem;
+        }
+      }
+
+      h1 {
+        font-size: 2.8rem;
+      }
+
+      form,
+      p {
+        max-width: 90%;
+        margin: 2rem auto;
+      }
+
+      h1,
+      p {
+        text-align: center;
+      }
+    }
+    .right {
+      display: none;
     }
   }
 }
