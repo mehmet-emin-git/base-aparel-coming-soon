@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #413a3a;
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.container .inner {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.container .left {
+  width: 60%;
+  padding: 0 2rem;
+  background: url("images/bg-pattern-desktop.svg") right/cover;
+}
+
+.container .left .logo {
+  margin: 4rem 0;
+  width: 10rem;
+}
+
+.container .left h1 {
+  text-transform: uppercase;
+  letter-spacing: 11px;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 5rem 0 1.5rem 0;
+}
+
+.container .left h1 span {
+  color: #ce9797;
+  font-weight: 200;
+}
+
+.container .left p {
+  line-height: 1.5;
+  color: #ce9797;
+  margin: 1.5rem 0;
+}
+
+.container .right {
+  width: 40%;
+  background: url("images/hero-desktop.jpg") no-repeat center/cover;
+}
+
+.container form {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.container form input {
+  height: 3.6rem;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(206, 151, 151, 0.5);
+  border-radius: 3rem;
+  outline: none;
+  padding: 1rem 2rem;
+}
+
+.container form input::-webkit-input-placeholder {
+  font-size: 1.1rem;
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  opacity: 0.7;
+}
+
+.container form input:-ms-input-placeholder {
+  font-size: 1.1rem;
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  opacity: 0.7;
+}
+
+.container form input::-ms-input-placeholder {
+  font-size: 1.1rem;
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  opacity: 0.7;
+}
+
+.container form input::placeholder {
+  font-size: 1.1rem;
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  opacity: 0.7;
+}
+
+.container form button {
+  height: 3.6rem;
+  width: 6.8rem;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  padding: 1rem;
+  border: none;
+  border-radius: 3rem;
+  outline: none;
+  -webkit-box-shadow: 2px 2px 15px rgba(206, 151, 151, 0.6);
+          box-shadow: 2px 2px 15px rgba(206, 151, 151, 0.6);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transition: 0.2s ease-out all;
+  transition: 0.2s ease-out all;
+  z-index: 10;
+}
+
+.container form button:hover {
+  opacity: 0.7;
+}
+
+.container form button:active {
+  -webkit-box-shadow: 2px 2px 8px rgba(206, 151, 151, 0.8);
+          box-shadow: 2px 2px 8px rgba(206, 151, 151, 0.8);
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.container form .error-icon {
+  position: absolute;
+  top: 1rem;
+  right: 8rem;
+  display: none;
+}
+
+.container form.error .error-icon {
+  display: block;
+}
+
+.container form.error input {
+  border: 1px solid rgba(249, 98, 98, 0.8);
+}
+
+.container form small {
+  display: block;
+  color: #f96262;
+  padding: 0 2rem;
+  margin-top: 1rem;
+  display: none;
+}
+
+.container form.error small {
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */
