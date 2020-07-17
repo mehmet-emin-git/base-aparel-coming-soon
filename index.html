@@ -12,6 +12,7 @@
     />
     <title>Base Apparel coming soon page</title>
     <link rel="stylesheet" href="main.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -33,7 +34,7 @@
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <form action="#">
+          <form action="#" id="form">
             <input
               type="email"
               name="email"
@@ -45,7 +46,7 @@
               class="error-icon"
               alt="error icon"
             />
-            <button>
+            <button type="submit" id="btn">
               <img src="images/icon-arrow.svg" alt="arrow icon" />
             </button>
             <small>Please Provide a valid email</small>
