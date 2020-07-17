@@ -9,7 +9,8 @@ $dark-grayish-red: hsl(0, 6%, 24%);
 $main-gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 $second-gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 // break point
-$breakpoint-mobile: 660px;
+$breakpoint-tablet: 660px;
+$breakpoint-moblie: 375px;
 
 // global styles
 * {
@@ -167,7 +168,7 @@ body {
   }
 }
 
-@media screen and (max-width: $breakpoint-mobile) {
+@media screen and (max-width: $breakpoint-tablet) {
   .container {
     .left {
       width: 100%;
@@ -198,7 +199,7 @@ body {
       }
 
       h1 {
-        font-size: 2.8rem;
+        font-size: 4rem;
       }
 
       form,
@@ -222,7 +223,7 @@ body {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: $breakpoint-moblie) {
   .container {
     .left {
       width: 100%;

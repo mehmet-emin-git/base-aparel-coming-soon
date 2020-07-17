@@ -242,7 +242,7 @@ body {
     font-size: 0.9rem;
   }
   .container .left h1 {
-    font-size: 2.8rem;
+    font-size: 4rem;
   }
   .container .left form,
   .container .left p {
@@ -261,7 +261,7 @@ body {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
   .container .left {
     width: 100%;
   }
