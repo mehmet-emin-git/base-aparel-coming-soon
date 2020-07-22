@@ -22,6 +22,7 @@ body {
 .container .inner {
   max-width: 430px;
   margin: 0 auto;
+  height: 100vh;
   -webkit-animation: fromTop 0.9s ease forwards;
           animation: fromTop 0.9s ease forwards;
 }
