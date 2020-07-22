@@ -231,6 +231,11 @@ body {
     .left {
       width: 100%;
 
+      .logo {
+        margin: 2rem 0;
+        width: 8rem;
+      }
+
       .inner {
         height: 100%;
         max-width: 600px;
@@ -258,12 +263,14 @@ body {
       }
 
       h1 {
-        font-size: 2.8rem;
+        margin-top: 4rem;
+        font-size: 2.5rem;
       }
 
       form,
       p {
-        max-width: 90%;
+        font-size: 1.1rem;
+        max-width: 96%;
         margin: 2rem auto;
       }
 
