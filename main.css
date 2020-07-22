@@ -20,7 +20,7 @@ body {
 }
 
 .container .inner {
-  max-width: 430px;
+  max-width: 500px;
   margin: 0 auto;
   height: 100vh;
   -webkit-animation: fromTop 0.9s ease forwards;
@@ -45,10 +45,10 @@ body {
 .container .left h1 {
   text-transform: uppercase;
   letter-spacing: 16px;
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-weight: 600;
   line-height: 1.1;
-  margin: 5rem 0 1.9rem 0;
+  margin: 3.2rem 0 1.2rem 0;
 }
 
 .container .left h1 span {
@@ -60,7 +60,7 @@ body {
   font-size: 1.2rem;
   line-height: 1.6;
   color: #ce9797;
-  margin: 2.5rem 0;
+  margin-bottom: 2.5rem;
 }
 
 .container .right {
